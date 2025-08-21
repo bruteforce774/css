@@ -5,7 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        border: 5px solid red;
+        height: 500px;
+    }
+    .item {
+        background-color: indigo;
+        width: 100px;
+        height: 100px;
+        color: white;
+        border: 1px black solid;
+        margin-left: 5px;
+    }
+</style>
 <body>
-    
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+    </div>
 </body>
 </html>
