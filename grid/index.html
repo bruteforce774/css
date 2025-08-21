@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <style>
+    .grid {
+      display: inline-grid;
+      grid-gap: 10px;
+      grid-template-rows: 200px 200px;
+      grid-template-columns: 200px 200px;
+      background-color: #e4e4e4;
+    }
+    [class^="item"] {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        outline: 3px solid black;
+        font-size: 20px;
+        color: darkblue;
+        font-weight: bold;
+    }
+  </style>
+  <body>
+    <div class="grid">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+      <div class="item4">4</div>
+    </div>
+  </body>
 </html>
